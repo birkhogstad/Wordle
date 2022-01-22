@@ -1,0 +1,51 @@
+#title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.row {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+.box {
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 50px;
+    height: 55px;
+    background-color: rgb(238, 238, 238);
+
+}
+
+#space {
+    margin-top: 50px;
+}
+
+#backspace {
+    background: url('images/backspace.png');
+    background-size: contain;
+}
+
+
+.bot {
+    width: 80px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.key:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+
+.key {
+    width: 30px;
+    height: 33px;
+}
+
