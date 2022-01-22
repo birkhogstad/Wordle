@@ -4,12 +4,14 @@ word = ""
 locked = false
 
 //Testing with "ROBOT" as solution, to be randomized:
-solution = "ROBOT"
-solutionDict = {
-    "R": 1,
-    "O": 2,
-    "B": 1,
-    "T": 1,
+solution = ""
+generateWord()
+
+
+//TODO
+function generateWord() {
+    //random
+    solution = "ROBOT"
 }
 
 
@@ -26,16 +28,11 @@ function occurance(word, l) {
 }
 
 
-
-
-
-
 function check() {
     if (col != 5) {
         return
     }
     solved = true
-
     for (let i = 0; i < word.length; i++) {
         //Checking letter at index 'i' in word
         current = word.charAt(i)
@@ -52,7 +49,6 @@ function check() {
             }
             continue
         }
-
         //Else, getting current box
         box = document.getElementById((row * 5) + i)
 
@@ -107,16 +103,12 @@ function check() {
 }
 
 
-
 function fill(letter) {
     if (col < 5) {
         if (!document.getElementById(letter.toLowerCase()).classList.contains("wrong")) {
-
             console.log("letter is not wrong")
-
             current = document.getElementById((row * 5) + col)
             current.innerHTML = letter.toUpperCase()
-    
             col++
             word += letter
         } else {
@@ -133,15 +125,10 @@ function remove() {
         col--
         current = document.getElementById((row * 5) + col)
         current.innerHTML = ""
+
         word = word.substring(0, col)
     }
 }
-
-
-
-
-
-
 
 
 document.onkeydown = function () {
