@@ -12,7 +12,8 @@ with open("words.txt", "r") as input:
         if len(c) <= 7 and len(c) >= 5:
             sort[len(c) - 5].append(c)
 
-print(sort[1])
+for i in sort:
+    print(len(i))
 
 for i in range(0, 3):
     l = str(i + 5) + ".txt"

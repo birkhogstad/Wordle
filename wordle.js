@@ -63,10 +63,10 @@ function check() {
         solved = false
         //If only 1 occurance or theres more cur letter in solution than given word, it's yellow
         if (occurance(word, current) == 1 || occurance(word, current) <= occurance(solution, current)) {
-            box.style.backgroundColor = "lightyellow"
+            box.style.backgroundColor = "yellow"
             if (!key.classList.contains("good")) {
                 key.classList.add("ok")
-                key.style.backgroundColor = "lightyellow"
+                key.style.backgroundColor = "yellow"
             }
             continue
         }
@@ -82,7 +82,7 @@ function check() {
         console.log("row: " + row + "   i: " + i)
         console.log(current + "| green: " + green + " | prev occ: " + occurance(word.substring(0, word.length), current))
         if (green + occurance(word.substring(0, i), current) < occurance(solution, current)) {
-            box.style.backgroundColor = "lightyellow"
+            box.style.backgroundColor = "yellow"
             continue
         }
         
